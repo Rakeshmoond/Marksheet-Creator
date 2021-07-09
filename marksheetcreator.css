@@ -1,8 +1,14 @@
 div{
   text-align:centre;
-  background-color:blueviolet;
   font-size: 30px;
   margin: 0px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/b/b7/Mnit_logo.png');
+  background-repeat: no-repeat;
+background-size: contain;
+backface-visibility: visible;
+background-color: blueviolet;
+margin: auto;
+
 
 }
 body{
@@ -14,15 +20,9 @@ em{
   padding: auto;
   float:righleft;
 }
-h3{
-  background-color: azure
 
-}
-h2{
-  background-color: coral;
-}
-div{
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/b/b7/Mnit_logo.png');
-  background-repeat: no-repeat;
-  background-size:70px;
+#form{
+  float: inherit;
+ border: 4px;
+ border-color: black;
 }
