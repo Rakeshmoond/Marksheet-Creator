@@ -8,51 +8,82 @@
     <meta name="keywords" content="marksheet,marksheet creator,10th mrksheet">
     <meta name="robot" content="index ,follow">
     <title>Marksheetcreator</title>
+    <!-- css and js added here -->
     <link rel="stylesheet" href="marksheetcreator.css">
     <script src="marksheetcreator.js"></script>
 </head>
+<!-- start body from here -->
 <body>
-    <span> </span>
+  
     <div>
         <h1 style="text-align:center">Welcome to here</h1>
     </div>
-    <h2>
-        <em>
+    <!-- procedure of create marksheet start from here -->
+    <h2> <em>
             Here you can create your Marksheet
-        </em>
-    </h2>
+        </em> </h2>
     <h3>First Fill Data In Below Form </h3>
     <ul type="circle">
         <li>First fill your Name</li>
+        <li>Enter Father Name</li>
         <li>Enter Roll Number</li>
-        <li>Enter Roll Number</li>
+        <li>Enter Board-"like RBSE OR CBSE"</li>
         <li>In lat step fill your marks according to subject-wise</li>
 
     </ul>
     <br>
     <br>
     <br><br><br>
-    <form action="/action_page.php" style="text-align: center">
-        NAME:
-<input type="text" id="name" onchange="myfunction()">
-<div>
-
-</div>
-<div></div>
-<br>
-ROLL NO:
-<input type="value">
-<div></div>
-<br>
-
-    D.O.B:
- <input type="date" name="date">
- <div></div>
-<br>
-
-<input type="reset" value="Reset" >
-<input type="button" value="Next" id="fform" onclick="myfunction(fform)">
-
-</form>
+    <!-- form start from here -->
+    
+    <table align="center" id ="form">
+        <form action="/upload.php" >
+        <tr>
+            <td>NAME:</td>
+            <td>
+            <input type="text" id="name" onchange="myfunction()">
+                </td>
+                </tr>
+            
+                
+                <tr>
+                    <td> FATHER NAME:</td>
+                    <td>
+                    
+                     <input type="value">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td> ROLL NO:</td>
+                    <td>
+                    
+                     <input type="value">
+                    </td>
+                </tr>
+                <tr>
+                    <td text-transform="uppercase">  BOARD:</td>
+                    <td>
+                    
+                     <input type="text">
+                    </td>
+                </tr>
+              <tr>
+                  <td> D.O.B:</td>
+                  <td> 
+                    <input type="date" name="date"></td>
+              </tr>
+<tr>
+    <td> </td>
+    <td><input type="reset" value="Reset" >
+        <button onClick="GFG_Fun()">
+            Next
+        </button>
+        <p id="GFG_DOWN"></p>
+    </td>
+</tr>
+    </form>       
+    </table>
+    <?php include 'upload.php';?>
 </body>
 </html>
