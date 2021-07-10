@@ -26,3 +26,37 @@ em{
  border: 4px;
  border-color: black;
 }
+#myBtn{
+ text-align: center;
+ text-transform: uppercase;
+    text-shadow: red;
+}
+tr,th,td{
+  text-decoration: solid;
+  text-transform: uppercase;
+}
+td:hover{
+  background-color:blueviolet;
+}
+.percentage{
+  font-weight:bold;
+font-family: fantasy;
+font: display 2px ;
+}
+.query{
+  background-color: chartreuse;
+  font-weight: bold;
+  align-content: center;
+  text-decoration-line: underline;
+ margin: auto;
+ margin-bottom: 30px;
+ display: flex;
+}
+#information{
+  font-weight: 900;
+  font-size: 20px;
+  width: auto;
+  text-align: center;
+  align-content: center;
+  
+}

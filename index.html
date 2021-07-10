@@ -18,8 +18,9 @@
     <div>
         <h1 style="text-align:center">Welcome to here</h1>
     </div>
+    <p id="demo"></p>
     <!-- procedure of create marksheet start from here -->
-    <h2> <em>
+    <h2> <em >
             Here you can create your Marksheet
         </em> </h2>
     <h3>First Fill Data In Below Form </h3>
@@ -31,13 +32,13 @@
         <li>In lat step fill your marks according to subject-wise</li>
 
     </ul>
-    <br>
-    <br>
-    <br><br><br>
-    <!-- form start from here -->
     
-    <table align="center" id ="form">
-        <form action="/upload.php" >
+   
+    
+    <!-- form start from here -->
+    <button id="myBtn" class="query" align="center"> You Want To Who Create THis Site?? Click here </button>
+    <form  >
+    <table align="center" id ="deatilform" border="1" >
         <tr>
             <td>NAME:</td>
             <td>
@@ -74,16 +75,70 @@
                     <input type="date" name="date"></td>
               </tr>
 <tr>
-    <td> </td>
+    
     <td><input type="reset" value="Reset" >
-        <button onClick="GFG_Fun()">
-            Next
-        </button>
-        <p id="GFG_DOWN"></p>
+       
+       
+    </td>
+    <td> <button onclick="changeText(bill)">Next</button>
+
     </td>
 </tr>
-    </form>       
-    </table>
-    <?php include 'upload.php';?>
+
+
+
+</form>       
+</table>
+<br>
+<br>
+    
+ <!-- 2nd marks form start from here  -->
+    <form  id="mark">
+        <table align="center" border="1" cellspacing="2" cellpadding="2">
+            <tr>
+                <th>subjects</th>
+                <th>marks</th>
+            </tr>
+            <tr>
+                <td>physics</td>
+                <td><input type="text" name="pm" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>chemistry</td>
+                <td><input type="text" name="cm" maxlength="3" ></td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td><input type="text" name="mm" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>hindi</td>
+                <td><input type="text" name="hm" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td>english</td>
+                <td><input type="text" name="em" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" onclick="getpercentage(mark)" value="Show Marks"></td>
+            </tr>
+            <tr>
+                <td>total marks</td>
+                <td> <input type="text" name="marks"></td>
+            </tr>
+            <td class="percentage">your percentage</td>
+            <td><input type="text" name="yp"></td>
+
+            </tr>
+        </table>
+    </form>
+<input type="button" value=" " id="gradebutton " onclick="getpercentage(information)" align="centre">
+    <p id="information"></p>
+   <script>document.getElementById("myBtn").addEventListener("click", function() {
+    alert("Hello Guys, Rakesh Moond Create This Site");
+  });
+  
+ document.getElementById("demo").innerHTML = Date();</script>
 </body>
 </html>
